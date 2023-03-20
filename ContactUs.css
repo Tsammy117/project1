@@ -5,34 +5,58 @@
   box-sizing: border-box;
   font-family: "Poppins" , sans-serif;
 }
+
+nav{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px;
+    padding-left: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.name{
+    color: rgb(255, 255, 255);
+    display: flex;
+    font-size: 35px;
+    font-family: Arial;
+    flex-direction: row;
+    padding-top: 0px;
+    align-items:flex-start ; 
+    justify-content: left;
+}
+
 body{
  background-image: url("bg.webp");
  background-color: #cccccc;
   min-height: 100vh;
   width: 100%;
-  background: #000000;
+  background: #3a3535;
   display: flex;
   align-items: center;
   justify-content: center;
 opacity: 0.5;
 }
+
+
 .container{
   width: 85%;
-  background: #4d4918ac;
+  background: #0beba8ac;
   border-radius: 6px;
   padding: 20px 60px 30px 40px;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
 }
 
-img:hover {
-  
 
-}
 .container .content{
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
+
+
 .container .content .left-side{
   width: 25%;
   height: 100%;
@@ -43,6 +67,8 @@ img:hover {
   margin-top: 15px;
   position: relative;
 }
+
+
 .content .left-side::before{
   content: '';
   position: absolute;
@@ -51,15 +77,19 @@ img:hover {
   right: -15px;
   top: 50%;
   transform: translateY(-50%);
-  background: #ebebf1;
+  background: #ffffff;
 }
+
+
 .content .left-side .details{
   margin: 14px;
   text-align: center;
 }
+
+
 .content .left-side .details i{
   font-size: 30px;
-  color: #e4e4e4;
+  color: #ffffff;
   margin-bottom: 10px;
 }
 .content .left-side .details .topic{
@@ -79,7 +109,7 @@ img:hover {
 .content .right-side .topic-text{
   font-size: 38px;
   font-weight: 600;
-  color: #fffafa;
+  color: #ffffff;
  text-decoration: none;
 }
 .right-side .input-box{
@@ -157,5 +187,3 @@ img:hover {
  .container .content .right-side{
    width: 100%;
    margin-left: 0;
- }
-}
